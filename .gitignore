@@ -1,0 +1,9 @@
+CLAUDE.md
+.env
+.env.local
+.DS_Store
+*.local
+.netlify/
+node_modules/
+.vscode/
+.idea/

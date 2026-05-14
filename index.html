@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Plano · Próximamente</title>
+  <link rel="icon" href="icons/favicon-32.png" type="image/png" sizes="32x32" />
+  <link rel="icon" href="icons/favicon-16.png" type="image/png" sizes="16x16" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon-180.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #0E0F0C;
+      --ink-hover: #25272A;
+      --text-2: #3C3F39;
+      --text-3: #6B6F6A;
+      --border-subtle: #ECECE8;
+      --base: #FAFAF7;
+      --sunken: #F4F4F0;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--base); color: var(--ink); }
+    body { font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif; min-height: 100vh; display: grid; place-items: center; padding: 32px; }
+    .wrap { max-width: 520px; text-align: center; }
+    .logo-tile {
+      width: 56px; height: 56px; border-radius: 14px; background: var(--ink);
+      display: inline-flex; align-items: center; justify-content: center;
+      overflow: hidden; margin-bottom: 28px;
+    }
+    .logo-tile img { width: 100%; height: 100%; display: block; }
+    h1 {
+      font-weight: 700; font-size: clamp(32px, 5vw, 44px);
+      letter-spacing: -1.2px; line-height: 1.08; margin: 0 0 16px;
+    }
+    h1 em { font-style: normal; font-weight: 500; color: var(--text-3); }
+    p { color: var(--text-2); font-size: 17px; line-height: 1.55; margin: 0 0 32px; }
+    a.btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--ink); color: var(--base); text-decoration: none;
+      padding: 14px 22px; border-radius: 8px;
+      font-size: 14.5px; font-weight: 500;
+      transition: background 150ms ease;
+    }
+    a.btn:hover { background: var(--ink-hover); }
+    a.btn svg { width: 14px; height: 14px; }
+    .meta { margin-top: 24px; color: var(--text-3); font-size: 13px; }
+    .meta-mono { font-family: 'Geist Mono', ui-monospace, monospace; font-size: 11.5px; color: var(--text-3); margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo-tile" aria-hidden="true">
+      <img src="assets/plano-logo.jpg" alt="" />
+    </div>
+    <h1>Plano, <em>en construcción.</em></h1>
+    <p>Estamos preparando la web pública. Mientras tanto, si ya tienes acceso a la app puedes entrar directamente.</p>
+    <a class="btn" href="https://safy-crm.netlify.app/personal.html">
+      Acceder
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M3 8h10M9 4l4 4-4 4" />
+      </svg>
+    </a>
+    <div class="meta-mono">© Safy App S.L. — 2026</div>
+  </div>
+</body>
+</html>
