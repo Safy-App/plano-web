@@ -147,7 +147,7 @@
     padding: 12px 0 16px;
   }
   .mobile-menu.open { display: block; }
-  .mobile-menu a {
+  .mobile-menu a:not(.btn) {
     display: block; padding: 12px 32px;
     font-size: 15px; font-weight: 500; color: var(--text2);
   }
@@ -812,8 +812,10 @@
     <a href="#funcionalidades" onclick="closeMenu()">Funcionalidades</a>
     <a href="#capturas" onclick="closeMenu()">Capturas</a>
     <div class="mobile-cta">
-      <a class="btn btn-secondary" href="https://safy-crm.netlify.app/personal.html" onclick="closeMenu()">Crear cuenta</a>
-      <a class="btn btn-primary" href="https://safy-crm.netlify.app/personal.html" onclick="closeMenu()">Acceder</a>
+      <a class="btn btn-primary" href="https://safy-crm.netlify.app/personal.html" onclick="closeMenu()">
+        Acceder
+        <svg class="arrow" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h8"/><path d="M7.5 3.5 11 7l-3.5 3.5"/></svg>
+      </a>
     </div>
   </div>
 </header>
