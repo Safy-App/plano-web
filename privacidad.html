@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad — Plano</title>
+<meta name="description" content="Política de Privacidad de Plano, app de gestión de gastos personales de Safy App, SL.">
+<meta name="theme-color" content="#0E0F0C">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@200;300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --tinta: #0E0F0C;
+    --off-white: #FAFAF7;
+    --gris-suave: #F4F4F0;
+    --gris-medio: #D9D9D2;
+    --verde-plano: #4A8D5C;
+    --texto: var(--tinta);
+    --texto-soft: #45463F;
+    --texto-faint: #7A7B73;
+    --max: 720px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--off-white);
+    color: var(--texto);
+    font-family: 'Geist', -apple-system, system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 1.5rem 6rem; }
+
+  /* Top bar */
+  .topbar {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid var(--gris-medio);
+    margin-bottom: 4.5rem;
+  }
+  .wordmark {
+    font-weight: 200;
+    font-size: 1.6rem;
+    letter-spacing: -0.04em;
+    color: var(--tinta);
+    text-decoration: none;
+  }
+  .wordmark .dot { color: var(--verde-plano); }
+  .topbar-meta {
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+    color: var(--texto-faint);
+    text-transform: uppercase;
+  }
+
+  /* Cabecera */
+  header.doc { margin-bottom: 4rem; }
+  .eyebrow {
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: var(--texto-faint);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  .eyebrow .num { color: var(--verde-plano); }
+
+  h1.display {
+    font-weight: 300;
+    font-size: clamp(2.6rem, 7vw, 4rem);
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+    color: var(--tinta);
+    margin-bottom: 1.5rem;
+  }
+  h1.display .accent { color: var(--verde-plano); }
+
+  .lead {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--texto-soft);
+    max-width: 32rem;
+    margin-bottom: 2rem;
+  }
+
+  .updated {
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--texto-faint);
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--gris-medio);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  /* Índice */
+  nav.toc {
+    margin-bottom: 5rem;
+    padding: 2rem 0;
+    border-top: 1px solid var(--gris-medio);
+    border-bottom: 1px solid var(--gris-medio);
+  }
+  nav.toc h2 {
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: var(--texto-faint);
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 1.4rem;
+  }
+  nav.toc ol { list-style: none; columns: 2; column-gap: 2.5rem; }
+  nav.toc li { margin-bottom: 0.4rem; break-inside: avoid; font-size: 0.92rem; }
+  nav.toc li a {
+    color: var(--texto-soft);
+    text-decoration: none;
+    display: flex;
+    gap: 0.75rem;
+    align-items: baseline;
+    padding: 0.15rem 0;
+    transition: color 0.15s ease;
+  }
+  nav.toc li a:hover { color: var(--verde-plano); }
+  nav.toc .tnum {
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--texto-faint);
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+  }
+  @media (max-width: 560px) { nav.toc ol { columns: 1; } }
+
+  /* Secciones */
+  section { margin-bottom: 3.5rem; scroll-margin-top: 1.5rem; }
+
+  .sec-label {
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    color: var(--texto-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.9rem;
+  }
+  .sec-label .num { color: var(--verde-plano); }
+  .sec-label .sep { color: var(--gris-medio); margin: 0 0.5rem; }
+
+  h2.sec {
+    font-weight: 300;
+    font-size: 1.75rem;
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+    color: var(--tinta);
+    margin-bottom: 1.5rem;
+  }
+
+  h3.sub {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--tinta);
+    margin: 2rem 0 0.75rem;
+    letter-spacing: -0.005em;
+  }
+
+  p { margin-bottom: 1rem; color: var(--texto-soft); }
+  p:last-child { margin-bottom: 0; }
+
+  section ul { margin: 0 0 1rem; padding: 0; list-style: none; }
+  section ul li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 0.55rem;
+    color: var(--texto-soft);
+  }
+  section ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 0.5rem;
+    height: 1px;
+    background: var(--gris-medio);
+  }
+
+  strong { font-weight: 600; color: var(--tinta); }
+  a { color: var(--verde-plano); text-decoration: underline; text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
+  a:hover { text-decoration-thickness: 2px; }
+
+  /* Ficha de identidad */
+  .identity {
+    background: var(--gris-suave);
+    padding: 1.5rem 1.75rem;
+    margin: 1.5rem 0;
+    border-left: 2px solid var(--verde-plano);
+  }
+  .identity dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.6rem 2rem;
+  }
+  .identity dt {
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+    color: var(--texto-faint);
+    text-transform: uppercase;
+    align-self: baseline;
+    padding-top: 0.2rem;
+  }
+  .identity dd { font-size: 0.95rem; color: var(--tinta); }
+  .identity .mono { font-family: 'Geist Mono', monospace; font-size: 0.88rem; }
+  @media (max-width: 480px) {
+    .identity dl { grid-template-columns: 1fr; gap: 0.15rem 0; }
+    .identity dd { margin-bottom: 0.75rem; }
+    .identity dd:last-child { margin-bottom: 0; }
+  }
+
+  /* Tabla de tratamientos */
+  .tratamientos-wrap { overflow-x: auto; margin: 1rem -1.5rem; padding: 0 1.5rem; }
+  @media (min-width: 560px) { .tratamientos-wrap { margin: 1rem 0; padding: 0; } }
+  table.tratamientos {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    min-width: 540px;
+  }
+  table.tratamientos thead tr {
+    border-top: 2px solid var(--tinta);
+    border-bottom: 1px solid var(--tinta);
+  }
+  table.tratamientos th {
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--tinta);
+    font-weight: 700;
+    padding: 0.75rem 1rem 0.75rem 0;
+    vertical-align: bottom;
+  }
+  table.tratamientos td {
+    padding: 1rem 1rem 1rem 0;
+    font-size: 0.9rem;
+    color: var(--texto-soft);
+    line-height: 1.55;
+    vertical-align: top;
+    border-bottom: 1px solid var(--gris-medio);
+  }
+
+  /* Cierre */
+  .closing {
+    margin-top: 5rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--gris-medio);
+    text-align: center;
+  }
+  .closing .mark {
+    font-weight: 200;
+    font-size: 1.6rem;
+    letter-spacing: -0.04em;
+    color: var(--tinta);
+    margin-bottom: 1.5rem;
+  }
+  .closing .mark .dot { color: var(--verde-plano); }
+  .closing p {
+    font-size: 0.92rem;
+    color: var(--texto-faint);
+    max-width: 30rem;
+    margin: 0 auto;
+    line-height: 1.55;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--gris-medio);
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+    color: var(--texto-faint);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  /* Botón volver arriba */
+  .totop {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--tinta);
+    color: var(--off-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.15s ease;
+  }
+  .totop.show { opacity: 1; pointer-events: auto; }
+  .totop:hover { transform: translateY(-2px); }
+
+  @media print {
+    nav.toc, .totop, .topbar { display: none; }
+    body { background: #fff; font-size: 10pt; }
+    header.doc { margin-bottom: 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="topbar">
+    <a href="index.html" class="wordmark" aria-label="Plano — Volver a la página principal">Plano<span class="dot">.</span></a>
+    <span class="topbar-meta">Safy App S.L. · 2026</span>
+  </div>
+
+  <header class="doc">
+    <div class="eyebrow"><span class="num">11</span> · Documento legal</div>
+    <h1 class="display">Política de<br>Privacidad<span class="accent">.</span></h1>
+    <p class="lead">Qué datos tratamos, por qué y qué puedes hacer al respecto. Sin tecnicismos.</p>
+    <div class="updated">
+      <span>Última actualización · 15 mayo 2026</span>
+      <span>v 1.0</span>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="Índice">
+    <h2>Contenido</h2>
+    <ol>
+      <li><a href="#s1"><span class="tnum">01</span><span>Responsable del tratamiento</span></a></li>
+      <li><a href="#s2"><span class="tnum">02</span><span>Datos que tratamos</span></a></li>
+      <li><a href="#s3"><span class="tnum">03</span><span>Finalidades y base legal</span></a></li>
+      <li><a href="#s4"><span class="tnum">04</span><span>Plazos de conservación</span></a></li>
+      <li><a href="#s5"><span class="tnum">05</span><span>Destinatarios y encargados</span></a></li>
+      <li><a href="#s6"><span class="tnum">06</span><span>Transferencias internacionales</span></a></li>
+      <li><a href="#s7"><span class="tnum">07</span><span>Tus derechos</span></a></li>
+      <li><a href="#s8"><span class="tnum">08</span><span>Seguridad de los datos</span></a></li>
+      <li><a href="#s9"><span class="tnum">09</span><span>Menores de edad</span></a></li>
+      <li><a href="#s10"><span class="tnum">10</span><span>Cambios en esta política</span></a></li>
+      <li><a href="#s11"><span class="tnum">11</span><span>Contacto</span></a></li>
+    </ol>
+  </nav>
+
+  <section id="s1">
+    <div class="sec-label"><span class="num">01</span><span class="sep">—</span>Responsable del tratamiento</div>
+    <h2 class="sec">Quién trata tus datos.</h2>
+    <p>El responsable del tratamiento de los datos personales recogidos a través de la aplicación «Plano» (en adelante, la «App») es:</p>
+    <div class="identity">
+      <dl>
+        <dt>Empresa</dt><dd>Safy App, SL</dd>
+        <dt>NIF</dt><dd class="mono">B56301203</dd>
+        <dt>Dirección</dt><dd>Calle Costa Brava 14, 28034 Madrid (España)</dd>
+        <dt>Email</dt><dd class="mono"><a href="mailto:hola@safy.app">hola@safy.app</a></dd>
+      </dl>
+    </div>
+    <p>Para cualquier cuestión relacionada con el tratamiento de tus datos personales o el ejercicio de tus derechos, puedes contactarnos en <a href="mailto:hola@safy.app">hola@safy.app</a>.</p>
+  </section>
+
+  <section id="s2">
+    <div class="sec-label"><span class="num">02</span><span class="sep">—</span>Datos que tratamos</div>
+    <h2 class="sec">Qué datos recogemos.</h2>
+    <p>Tratamos las siguientes categorías de datos personales:</p>
+
+    <h3 class="sub">2.1. Datos que tú nos facilitas</h3>
+    <ul>
+      <li><strong>Datos de registro y cuenta:</strong> dirección de correo electrónico y contraseña (almacenada cifrada, nunca en claro). Opcionalmente, nombre y otros datos de perfil que decidas añadir.</li>
+      <li><strong>Datos financieros que introduces manualmente en la App:</strong> ingresos, gastos, categorías, cuentas, transferencias entre cuentas y cualquier otra información relacionada con tus finanzas personales que decidas registrar.</li>
+      <li><strong>Comunicaciones:</strong> cuando nos escribes (por ejemplo, a hola@safy.app), tratamos el contenido de tu mensaje y los datos identificativos que nos facilites.</li>
+    </ul>
+
+    <h3 class="sub">2.2. Datos que se generan con tu uso de la App</h3>
+    <ul>
+      <li>Datos técnicos básicos necesarios para el funcionamiento del servicio: identificador de usuario, fecha y hora de acceso, idioma, tipo de dispositivo y versión de la App.</li>
+      <li>Registros de actividad (logs) técnicos: errores, peticiones al servidor y eventos similares, utilizados exclusivamente para mantener la seguridad y el correcto funcionamiento del servicio.</li>
+    </ul>
+
+    <h3 class="sub">2.3. Datos relativos a pagos</h3>
+    <p>Si contratas funcionalidades premium, los pagos se procesan a través de App Store (Apple) o Google Play (Google), que actúan como responsables independientes del tratamiento de tus datos de pago conforme a sus propias políticas. Safy App, SL recibe únicamente confirmación del estado de la suscripción (activa, cancelada, renovada) y un identificador anónimo de la compra. No almacenamos ni accedemos a los datos de tu tarjeta.</p>
+    <p>Plano no se conecta a tus cuentas bancarias y no recibe información directamente de tu banco. Todos los datos financieros que aparecen en la App han sido introducidos voluntariamente por ti.</p>
+  </section>
+
+  <section id="s3">
+    <div class="sec-label"><span class="num">03</span><span class="sep">—</span>Finalidades y base legal</div>
+    <h2 class="sec">Para qué tratamos tus datos.</h2>
+    <p>Tratamos tus datos personales con las siguientes finalidades y bases jurídicas, conforme al artículo 6 del Reglamento (UE) 2016/679 (RGPD):</p>
+    <div class="tratamientos-wrap">
+      <table class="tratamientos">
+        <thead>
+          <tr><th>Finalidad</th><th>Datos tratados</th><th>Base legal (art. 6 RGPD)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Crear y gestionar tu cuenta de Usuario y prestarte el servicio de la App.</td><td>Email, contraseña, datos de perfil, datos financieros que introduces.</td><td>Ejecución del contrato (art. 6.1.b RGPD).</td></tr>
+          <tr><td>Gestionar pagos y suscripciones premium.</td><td>Identificador de compra, estado de suscripción, email.</td><td>Ejecución del contrato (art. 6.1.b RGPD).</td></tr>
+          <tr><td>Atender consultas, comunicaciones y reclamaciones.</td><td>Email, contenido del mensaje y datos identificativos.</td><td>Interés legítimo (art. 6.1.f RGPD) y, en su caso, ejecución del contrato.</td></tr>
+          <tr><td>Garantizar la seguridad de la App y prevenir el fraude.</td><td>Logs técnicos, IP, eventos de acceso y errores.</td><td>Interés legítimo (art. 6.1.f RGPD).</td></tr>
+          <tr><td>Cumplir obligaciones legales (fiscales, contables, de consumo).</td><td>Datos de facturación cuando aplique y datos asociados a reclamaciones.</td><td>Cumplimiento de obligación legal (art. 6.1.c RGPD).</td></tr>
+          <tr><td>Enviarte comunicaciones sobre cambios relevantes del servicio.</td><td>Email.</td><td>Interés legítimo (art. 6.1.f RGPD) o ejecución del contrato.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>No tomamos decisiones automatizadas con efectos jurídicos sobre ti ni realizamos elaboración de perfiles con esa finalidad, en el sentido del artículo 22 del RGPD.</p>
+  </section>
+
+  <section id="s4">
+    <div class="sec-label"><span class="num">04</span><span class="sep">—</span>Plazos de conservación</div>
+    <h2 class="sec">Cuánto tiempo guardamos tus datos.</h2>
+    <p>Conservamos tus datos personales durante el tiempo necesario para cumplir las finalidades para las que fueron recogidos y, posteriormente, durante los plazos legalmente exigibles:</p>
+    <ul>
+      <li>Datos de tu cuenta y datos financieros que introduces: mientras tu cuenta esté activa. Si solicitas la baja o eliminas tu cuenta, los datos serán suprimidos, salvo aquellos que debamos conservar por obligación legal.</li>
+      <li>Datos de facturación y relacionados con pagos: durante los plazos exigidos por la normativa fiscal y mercantil (con carácter general, hasta 6 años conforme al Código de Comercio).</li>
+      <li>Comunicaciones y soporte: durante el tiempo necesario para gestionar tu consulta y hasta 3 años después, salvo que sean necesarias para atender reclamaciones.</li>
+      <li>Logs técnicos y de seguridad: durante un plazo máximo de 12 meses, salvo que deban conservarse más tiempo para investigar incidentes.</li>
+    </ul>
+    <p>Una vez transcurridos estos plazos, tus datos serán suprimidos o anonimizados de forma irreversible.</p>
+  </section>
+
+  <section id="s5">
+    <div class="sec-label"><span class="num">05</span><span class="sep">—</span>Destinatarios y encargados del tratamiento</div>
+    <h2 class="sec">Con quién compartimos tus datos.</h2>
+    <p>No vendemos tus datos a terceros bajo ninguna circunstancia.</p>
+    <p>Para poder prestarte el servicio, contamos con proveedores que tratan datos personales por cuenta de Safy App, SL en calidad de encargados del tratamiento. Con todos ellos se firma un contrato de encargado del tratamiento conforme al artículo 28 del RGPD.</p>
+    <h3 class="sub">Proveedores actuales</h3>
+    <ul>
+      <li><strong>Proveedor de infraestructura y base de datos:</strong> Supabase Inc. (sociedad estadounidense, con sede en Delaware, EE. UU.) para el alojamiento de la base de datos, autenticación y almacenamiento de archivos. Los datos de los Usuarios de Plano se alojan en la región de la Unión Europea (Frankfurt, Alemania), si bien la matriz del proveedor puede tener acceso a determinados metadatos desde fuera del Espacio Económico Europeo conforme a lo indicado en la cláusula 6.</li>
+      <li><strong>Plataformas de distribución y pagos:</strong> Apple (App Store) y Google (Google Play) para la gestión de la descarga de la App y, en su caso, del cobro de suscripciones premium. Actúan como responsables independientes del tratamiento.</li>
+    </ul>
+    <h3 class="sub">Otros destinatarios</h3>
+    <p>Tus datos podrán ser comunicados a Administraciones Públicas, Jueces y Tribunales, Fuerzas y Cuerpos de Seguridad del Estado y otros organismos públicos cuando exista una obligación legal que así lo exija.</p>
+  </section>
+
+  <section id="s6">
+    <div class="sec-label"><span class="num">06</span><span class="sep">—</span>Transferencias internacionales</div>
+    <h2 class="sec">Dónde están tus datos.</h2>
+    <p>Los datos personales de los Usuarios de Plano se almacenan en servidores ubicados dentro del Espacio Económico Europeo (EEE), concretamente en la región de Frankfurt (Alemania) de nuestro proveedor de infraestructura.</p>
+    <p>No obstante, dado que la sociedad matriz de dicho proveedor está domiciliada en los Estados Unidos, puede producirse un acceso puntual a determinados metadatos desde fuera del EEE con finalidades de soporte, mantenimiento y administración del servicio. Esta transferencia se ampara en las siguientes garantías previstas en el Capítulo V del RGPD:</p>
+    <ul>
+      <li><strong>Decisión de adecuación:</strong> Decisión de Ejecución (UE) 2023/1795 de la Comisión, de 10 de julio de 2023, relativa al Marco de Privacidad de Datos UE–EEUU («EU–US Data Privacy Framework»), siempre que el destinatario esté certificado en dicho marco.</li>
+      <li><strong>Cláusulas Contractuales Tipo:</strong> con carácter complementario o subsidiario, las Cláusulas Contractuales Tipo aprobadas por la Comisión Europea mediante la Decisión de Ejecución (UE) 2021/914 de 4 de junio de 2021.</li>
+    </ul>
+    <p>Puedes solicitar una copia de estas garantías escribiéndonos a <a href="mailto:hola@safy.app">hola@safy.app</a>.</p>
+  </section>
+
+  <section id="s7">
+    <div class="sec-label"><span class="num">07</span><span class="sep">—</span>Tus derechos</div>
+    <h2 class="sec">Qué puedes hacer con tus datos.</h2>
+    <p>La normativa europea de protección de datos te reconoce los siguientes derechos sobre tus datos personales:</p>
+    <ul>
+      <li><strong>Acceso.</strong> Saber qué datos tuyos tratamos y obtener una copia.</li>
+      <li><strong>Rectificación.</strong> Pedir que corrijamos los datos que sean inexactos o incompletos.</li>
+      <li><strong>Supresión.</strong> Pedir que borremos tus datos cuando ya no sean necesarios para la finalidad para la que se recogieron, o cuando retires el consentimiento.</li>
+      <li><strong>Oposición.</strong> Oponerte al tratamiento de tus datos cuando se base en nuestro interés legítimo.</li>
+      <li><strong>Limitación.</strong> Pedir que limitemos el tratamiento en determinados supuestos previstos por la ley.</li>
+      <li><strong>Portabilidad.</strong> Recibir tus datos en un formato estructurado y de uso común, o pedirnos que se los enviemos directamente a otro responsable cuando sea técnicamente posible.</li>
+      <li><strong>Retirada del consentimiento.</strong> Cuando el tratamiento se base en tu consentimiento, puedes retirarlo en cualquier momento, sin que ello afecte a la licitud del tratamiento previo.</li>
+    </ul>
+    <h3 class="sub">Cómo ejercer tus derechos</h3>
+    <p>Puedes ejercer cualquiera de estos derechos escribiéndonos a <a href="mailto:hola@safy.app">hola@safy.app</a> desde la dirección de email asociada a tu cuenta, indicando qué derecho quieres ejercer. Podemos pedirte que acredites tu identidad si tenemos dudas razonables sobre quién hace la solicitud.</p>
+    <p>Responderemos en el plazo máximo de un (1) mes desde la recepción de la solicitud, ampliable en dos (2) meses adicionales en casos especialmente complejos, conforme al artículo 12 del RGPD.</p>
+    <h3 class="sub">Reclamación ante la autoridad de control</h3>
+    <p>Si consideras que el tratamiento de tus datos no se ajusta a la normativa, o si no estás conforme con la forma en que hemos atendido tus derechos, puedes presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD), con domicilio en C/ Jorge Juan, 6, 28001 Madrid, y a través de la sede electrónica <a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>.</p>
+  </section>
+
+  <section id="s8">
+    <div class="sec-label"><span class="num">08</span><span class="sep">—</span>Seguridad de los datos</div>
+    <h2 class="sec">Cómo protegemos tu información.</h2>
+    <p>Safy App, SL aplica medidas técnicas y organizativas apropiadas para garantizar un nivel de seguridad adecuado al riesgo, conforme al artículo 32 del RGPD. Entre otras:</p>
+    <ul>
+      <li>Cifrado de las contraseñas mediante funciones hash robustas, sin almacenarlas en claro en ningún momento.</li>
+      <li>Cifrado de las comunicaciones entre la App y nuestros servidores (HTTPS/TLS).</li>
+      <li>Control de accesos basado en el principio de mínimo privilegio: solo el personal autorizado accede a los datos estrictamente necesarios para su función.</li>
+      <li>Copias de seguridad periódicas y procedimientos de recuperación ante incidentes.</li>
+      <li>Revisión continua de las medidas de seguridad para adaptarlas al estado de la técnica.</li>
+    </ul>
+    <p>En caso de producirse una brecha de seguridad que afecte a tus datos personales y suponga un alto riesgo para tus derechos y libertades, te lo comunicaremos sin dilación indebida, conforme al artículo 34 del RGPD.</p>
+  </section>
+
+  <section id="s9">
+    <div class="sec-label"><span class="num">09</span><span class="sep">—</span>Menores de edad</div>
+    <h2 class="sec">Quién puede usar Plano.</h2>
+    <p>La App está dirigida exclusivamente a personas mayores de edad (18 años o más). No recogemos de forma consciente datos de menores de edad. Si tenemos conocimiento de que se han registrado datos de un menor, procederemos a su supresión sin demora.</p>
+    <p>Si eres padre, madre o tutor legal y crees que un menor a tu cargo nos ha facilitado sus datos, escríbenos a <a href="mailto:hola@safy.app">hola@safy.app</a> y eliminaremos la cuenta y los datos asociados.</p>
+  </section>
+
+  <section id="s10">
+    <div class="sec-label"><span class="num">10</span><span class="sep">—</span>Cambios en esta política</div>
+    <h2 class="sec">Si algo cambia, te lo decimos.</h2>
+    <p>Esta Política de Privacidad puede actualizarse para reflejar cambios legales, técnicos o de funcionamiento de la App. La versión vigente en cada momento estará publicada en la App, con indicación de su fecha de última actualización.</p>
+    <p>Si los cambios afectan de forma sustancial a tus derechos o al tratamiento de tus datos, te informaremos por un medio adecuado (por ejemplo, un aviso destacado en la App o una notificación por correo electrónico) con la antelación razonable.</p>
+  </section>
+
+  <section id="s11">
+    <div class="sec-label"><span class="num">11</span><span class="sep">—</span>Contacto</div>
+    <h2 class="sec">¿Dudas? Escríbenos.</h2>
+    <p>Para cualquier consulta sobre esta Política de Privacidad o sobre el tratamiento de tus datos personales:</p>
+    <div class="identity">
+      <dl>
+        <dt>Email</dt><dd class="mono"><a href="mailto:hola@safy.app">hola@safy.app</a></dd>
+        <dt>Web</dt><dd class="mono"><a href="https://safy.app">safy.app</a></dd>
+        <dt>Dirección</dt><dd>Safy App, SL · Calle Costa Brava 14, 28034 Madrid (España)</dd>
+      </dl>
+    </div>
+  </section>
+
+  <div class="closing">
+    <div class="mark">Plano<span class="dot">.</span></div>
+    <p>Tratamos tus datos como nos gustaría que tratasen los nuestros.</p>
+  </div>
+
+  <footer>
+    <span>© 2026 Safy App, SL</span>
+    <span>Política de Privacidad · v 1.0</span>
+  </footer>
+
+</div>
+
+<a href="#" class="totop" aria-label="Volver arriba">↑</a>
+
+<script>
+  var totop = document.querySelector('.totop');
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 600) totop.classList.add('show');
+    else totop.classList.remove('show');
+  });
+  totop.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>
