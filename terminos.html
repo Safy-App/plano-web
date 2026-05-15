@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Términos y Condiciones — Plano</title>
+<meta name="description" content="Términos y Condiciones de Uso de Plano, app de gestión de gastos personales de Safy App, SL.">
+<meta name="theme-color" content="#0E0F0C">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Paleta Plano */
+    --tinta: #0E0F0C;
+    --off-white: #FAFAF7;
+    --gris-suave: #F4F4F0;
+    --gris-medio: #D9D9D2;
+    --verde-plano: #4A8D5C;
+    --rojo-plano: #C24A2D;
+
+    --texto: var(--tinta);
+    --texto-soft: #45463F;
+    --texto-faint: #7A7B73;
+
+    --max: 720px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--off-white);
+    color: var(--texto);
+    font-family: 'Geist', -apple-system, system-ui, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.65;
+    letter-spacing: 0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 1.5rem 6rem;
+  }
+
+  /* ---------- Cabecera ---------- */
+  .topbar {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid var(--gris-medio);
+    margin-bottom: 4.5rem;
+  }
+
+  .wordmark {
+    font-family: 'Geist', sans-serif;
+    font-weight: 200;
+    font-size: 1.6rem;
+    letter-spacing: -0.04em;
+    color: var(--tinta);
+    text-decoration: none;
+  }
+
+  .wordmark .dot { color: var(--verde-plano); }
+
+  .topbar-meta {
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+    color: var(--texto-faint);
+    text-transform: uppercase;
+  }
+
+  header.doc {
+    margin-bottom: 4rem;
+  }
+
+  .eyebrow {
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: var(--texto-faint);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+
+  .eyebrow .num { color: var(--verde-plano); }
+
+  h1.display {
+    font-family: 'Geist', sans-serif;
+    font-weight: 300;
+    font-size: clamp(2.6rem, 7vw, 4rem);
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+    color: var(--tinta);
+    margin-bottom: 1.5rem;
+  }
+
+  h1.display .accent { color: var(--verde-plano); }
+
+  .lead {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--texto-soft);
+    max-width: 32rem;
+    margin-bottom: 2rem;
+  }
+
+  .updated {
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--texto-faint);
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--gris-medio);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  /* ---------- Índice ---------- */
+  nav.toc {
+    margin-bottom: 5rem;
+    padding: 2rem 0;
+    border-top: 1px solid var(--gris-medio);
+    border-bottom: 1px solid var(--gris-medio);
+  }
+
+  nav.toc h2 {
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    color: var(--texto-faint);
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 1.4rem;
+  }
+
+  nav.toc ol {
+    list-style: none;
+    columns: 2;
+    column-gap: 2.5rem;
+  }
+
+  nav.toc li {
+    margin-bottom: 0.4rem;
+    break-inside: avoid;
+    font-size: 0.92rem;
+  }
+
+  nav.toc li a {
+    color: var(--texto-soft);
+    text-decoration: none;
+    display: flex;
+    gap: 0.75rem;
+    align-items: baseline;
+    padding: 0.15rem 0;
+    transition: color 0.15s ease;
+  }
+
+  nav.toc li a:hover { color: var(--verde-plano); }
+
+  nav.toc .tnum {
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--texto-faint);
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 560px) {
+    nav.toc ol { columns: 1; }
+  }
+
+  /* ---------- Secciones ---------- */
+  section {
+    margin-bottom: 3.5rem;
+    scroll-margin-top: 1.5rem;
+  }
+
+  .sec-label {
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    color: var(--texto-faint);
+    text-transform: uppercase;
+    margin-bottom: 0.9rem;
+  }
+
+  .sec-label .num { color: var(--verde-plano); }
+  .sec-label .sep { color: var(--gris-medio); margin: 0 0.5rem; }
+
+  h2.sec {
+    font-family: 'Geist', sans-serif;
+    font-weight: 300;
+    font-size: 1.75rem;
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+    color: var(--tinta);
+    margin-bottom: 1.5rem;
+  }
+
+  h3.sub {
+    font-family: 'Geist', sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--tinta);
+    margin: 2rem 0 0.75rem;
+    letter-spacing: -0.005em;
+  }
+
+  p {
+    margin-bottom: 1rem;
+    color: var(--texto-soft);
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  section ul {
+    margin: 0 0 1rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  section ul li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 0.55rem;
+    color: var(--texto-soft);
+  }
+
+  section ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 0.5rem;
+    height: 1px;
+    background: var(--gris-medio);
+  }
+
+  strong { font-weight: 600; color: var(--tinta); }
+
+  a { color: var(--verde-plano); text-decoration: underline; text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
+  a:hover { text-decoration-thickness: 2px; }
+
+  /* ---------- Ficha del titular (estilo movimiento Plano) ---------- */
+  .identity {
+    background: var(--gris-suave);
+    padding: 1.5rem 1.75rem;
+    margin: 1.5rem 0;
+    border-left: 2px solid var(--verde-plano);
+  }
+
+  .identity dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.6rem 2rem;
+  }
+
+  .identity dt {
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+    color: var(--texto-faint);
+    text-transform: uppercase;
+    align-self: baseline;
+    padding-top: 0.2rem;
+  }
+
+  .identity dd {
+    font-size: 0.95rem;
+    color: var(--tinta);
+  }
+
+  .identity .mono {
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.88rem;
+  }
+
+  @media (max-width: 480px) {
+    .identity dl { grid-template-columns: 1fr; gap: 0.15rem 0; }
+    .identity dd { margin-bottom: 0.75rem; }
+    .identity dd:last-child { margin-bottom: 0; }
+  }
+
+  /* ---------- Cierre ---------- */
+  .closing {
+    margin-top: 5rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--gris-medio);
+    text-align: center;
+  }
+
+  .closing .mark {
+    font-family: 'Geist', sans-serif;
+    font-weight: 200;
+    font-size: 1.6rem;
+    letter-spacing: -0.04em;
+    color: var(--tinta);
+    margin-bottom: 1.5rem;
+  }
+
+  .closing .mark .dot { color: var(--verde-plano); }
+
+  .closing p {
+    font-size: 0.92rem;
+    color: var(--texto-faint);
+    max-width: 30rem;
+    margin: 0 auto;
+    line-height: 1.55;
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--gris-medio);
+    font-family: 'Geist Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+    color: var(--texto-faint);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  /* ---------- Botón volver arriba ---------- */
+  .totop {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: var(--tinta);
+    color: var(--off-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.15s ease;
+  }
+
+  .totop.show { opacity: 1; pointer-events: auto; }
+  .totop:hover { transform: translateY(-2px); }
+
+  @media print {
+    nav.toc, .totop, .topbar { display: none; }
+    body { background: #fff; font-size: 10pt; }
+    header.doc { margin-bottom: 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="topbar">
+    <a href="index.html" class="wordmark" aria-label="Plano — Volver a la página principal">Plano<span class="dot">.</span></a>
+    <span class="topbar-meta">Safy App S.L. · 2026</span>
+  </div>
+
+  <header class="doc">
+    <div class="eyebrow"><span class="num">10</span> · Documento legal</div>
+    <h1 class="display">Términos y<br>Condiciones<span class="accent">.</span></h1>
+    <p class="lead">Las reglas que rigen el uso de Plano. Sin letra pequeña. Todo aquí, claro.</p>
+    <div class="updated">
+      <span>Última actualización · 15 mayo 2026</span>
+      <span>v 1.0</span>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="Índice">
+    <h2>Contenido</h2>
+    <ol>
+      <li><a href="#s1"><span class="tnum">01</span><span>Titular</span></a></li>
+      <li><a href="#s2"><span class="tnum">02</span><span>Objeto del servicio</span></a></li>
+      <li><a href="#s3"><span class="tnum">03</span><span>Acceso y registro</span></a></li>
+      <li><a href="#s4"><span class="tnum">04</span><span>Normas de uso</span></a></li>
+      <li><a href="#s5"><span class="tnum">05</span><span>Propiedad intelectual</span></a></li>
+      <li><a href="#s6"><span class="tnum">06</span><span>Pagos y suscripciones</span></a></li>
+      <li><a href="#s7"><span class="tnum">07</span><span>Datos personales</span></a></li>
+      <li><a href="#s8"><span class="tnum">08</span><span>Garantías y responsabilidad</span></a></li>
+      <li><a href="#s9"><span class="tnum">09</span><span>Suspensión y baja</span></a></li>
+      <li><a href="#s10"><span class="tnum">10</span><span>Cambios en los Términos</span></a></li>
+      <li><a href="#s11"><span class="tnum">11</span><span>Nulidad parcial</span></a></li>
+      <li><a href="#s12"><span class="tnum">12</span><span>Ley aplicable y litigios</span></a></li>
+      <li><a href="#s13"><span class="tnum">13</span><span>Contacto</span></a></li>
+    </ol>
+  </nav>
+
+  <section id="s1">
+    <div class="sec-label"><span class="num">01</span><span class="sep">—</span>Titular</div>
+    <h2 class="sec">Quién está detrás de Plano.</h2>
+    <p>Estos Términos y Condiciones de Uso (los «Términos») regulan el uso de la aplicación «Plano» (la «App»), una herramienta de gestión de gastos personales. La App es titularidad de:</p>
+    <div class="identity">
+      <dl>
+        <dt>Empresa</dt><dd>Safy App, SL</dd>
+        <dt>NIF</dt><dd class="mono">B56301203</dd>
+        <dt>Dirección</dt><dd>Calle Costa Brava 14, 28034 Madrid (España)</dd>
+        <dt>Email</dt><dd><a href="mailto:hola@safy.app">hola@safy.app</a></dd>
+      </dl>
+    </div>
+    <p>En adelante, Safy App, SL será referida como «el Titular». Al descargar, instalar, acceder o usar la App, adquieres la condición de Usuario y aceptas estos Términos en su totalidad. Si no estás de acuerdo con alguna parte, no uses la App.</p>
+  </section>
+
+  <section id="s2">
+    <div class="sec-label"><span class="num">02</span><span class="sep">—</span>Objeto del servicio</div>
+    <h2 class="sec">Qué es Plano y qué ofrece.</h2>
+    <p>Plano es una aplicación de gestión de gastos personales que permite al Usuario registrar ingresos y gastos, consultar el balance, visualizar movimientos en un calendario y controlar transferencias entre cuentas, entre otras funcionalidades relacionadas con el seguimiento de las finanzas personales.</p>
+    <p>La descarga e instalación de la App son gratuitas. No obstante, determinadas funcionalidades, contenidos o servicios premium pueden estar sujetos al pago de un precio, conforme a lo establecido en la cláusula 6 de estos Términos.</p>
+    <p>El Titular se reserva el derecho a modificar, ampliar, suspender o eliminar, total o parcialmente y en cualquier momento, las funcionalidades, contenidos y servicios de la App, así como su presentación y configuración, sin que ello genere derecho a indemnización alguna a favor del Usuario.</p>
+  </section>
+
+  <section id="s3">
+    <div class="sec-label"><span class="num">03</span><span class="sep">—</span>Acceso y registro</div>
+    <h2 class="sec">Cómo se accede a la App.</h2>
+    <h3 class="sub">3.1. Requisitos</h3>
+    <p>El uso de la App está dirigido a personas mayores de edad (18 años) con plena capacidad jurídica y de obrar. El Usuario declara cumplir dicho requisito y asume la responsabilidad derivada de cualquier declaración falsa o inexacta.</p>
+    <h3 class="sub">3.2. Cuenta de Usuario</h3>
+    <p>Para usar la App es necesario crear una cuenta. El Usuario se compromete a facilitar información veraz, exacta, completa y actualizada durante el registro, y a mantenerla actualizada.</p>
+    <p>El Usuario es responsable de la custodia y confidencialidad de sus credenciales (nombre de usuario y contraseña) y se compromete a no cederlas a terceros. Será responsable de toda actividad realizada a través de su cuenta y deberá comunicar al Titular, de forma inmediata, cualquier uso no autorizado de la misma o brecha de seguridad de la que tenga conocimiento.</p>
+    <p>El Titular podrá denegar, suspender o cancelar la cuenta de cualquier Usuario que incumpla estos Términos o la normativa aplicable, sin necesidad de preaviso y sin derecho a indemnización.</p>
+  </section>
+
+  <section id="s4">
+    <div class="sec-label"><span class="num">04</span><span class="sep">—</span>Normas de uso</div>
+    <h2 class="sec">Cómo se usa Plano.</h2>
+    <p>El Usuario se compromete a utilizar la App de conformidad con la ley, estos Términos, la moral y el orden público. En particular, y de forma enunciativa y no limitativa, el Usuario se obliga a:</p>
+    <ul>
+      <li>No utilizar la App con fines o efectos ilícitos, lesivos de derechos e intereses de terceros, o que de cualquier forma puedan dañar, inutilizar, sobrecargar o deteriorar la App o impedir su normal utilización.</li>
+      <li>No introducir o difundir virus informáticos, código malicioso o cualesquiera sistemas físicos o lógicos susceptibles de provocar daños en los sistemas del Titular o de terceros.</li>
+      <li>No intentar acceder, utilizar o manipular los datos del Titular, de terceros proveedores o de otros Usuarios.</li>
+      <li>No reproducir, copiar, distribuir, transformar o modificar los contenidos de la App, salvo autorización expresa del titular de los correspondientes derechos.</li>
+      <li>No realizar acciones de ingeniería inversa, descompilación o desensamblado de la App, salvo en los supuestos legalmente permitidos.</li>
+      <li>Facilitar información veraz en todos los formularios y campos de la App.</li>
+    </ul>
+    <p>El incumplimiento de estas obligaciones podrá dar lugar a la suspensión o cancelación del acceso del Usuario a la App, sin perjuicio de las acciones legales que pudieran corresponder.</p>
+  </section>
+
+  <section id="s5">
+    <div class="sec-label"><span class="num">05</span><span class="sep">—</span>Propiedad intelectual</div>
+    <h2 class="sec">A quién pertenece lo que ves.</h2>
+    <p>Todos los derechos de propiedad intelectual e industrial sobre la App —incluyendo su código fuente, diseño, estructura de navegación, bases de datos, textos, gráficos, logotipos, iconos, imágenes, software y demás elementos— son titularidad del Titular o de terceros que han autorizado su uso, y se encuentran protegidos por la normativa nacional e internacional aplicable.</p>
+    <p>La aceptación de estos Términos no implica la cesión ni transmisión al Usuario de derecho alguno sobre la App o sus elementos. El Titular concede al Usuario una licencia de uso limitada, no exclusiva, intransferible y revocable, exclusivamente para el uso personal de la App conforme a su finalidad y a estos Términos.</p>
+    <p>Queda prohibida la reproducción, distribución, comunicación pública, transformación o cualquier otra forma de explotación de los contenidos de la App sin autorización expresa y por escrito del Titular.</p>
+    <p>Las denominaciones «Plano» y «Safy App», así como los signos distintivos asociados, son marcas o nombres comerciales del Titular o de terceros, no pudiendo ser utilizados sin la correspondiente autorización.</p>
+  </section>
+
+  <section id="s6">
+    <div class="sec-label"><span class="num">06</span><span class="sep">—</span>Pagos y suscripciones</div>
+    <h2 class="sec">Qué cuesta y cómo se paga.</h2>
+    <h3 class="sub">6.1. Funcionalidades de pago</h3>
+    <p>Sin perjuicio de la gratuidad de la descarga, el Titular puede ofrecer contenidos, funcionalidades o servicios premium sujetos al pago de un precio (compras integradas o suscripciones). Las características y el precio de cada producto o servicio se muestran de forma clara antes de que el Usuario confirme la compra.</p>
+    <h3 class="sub">6.2. Procesamiento de pagos</h3>
+    <p>Los pagos se gestionan a través de las plataformas de distribución de aplicaciones (App Store de Apple y/o Google Play) y/o de proveedores de servicios de pago, conforme a sus propias condiciones. El Titular no almacena los datos completos de las tarjetas de pago de los Usuarios.</p>
+    <h3 class="sub">6.3. Suscripciones y renovación</h3>
+    <p>Las suscripciones se renuevan automáticamente por periodos iguales al inicialmente contratado, salvo que el Usuario las cancele con la antelación indicada a través de las opciones habilitadas en la plataforma de distribución correspondiente. La cancelación surte efecto al final del periodo de facturación en curso.</p>
+    <h3 class="sub">6.4. Derecho de desistimiento</h3>
+    <p>El Usuario consumidor dispone de un plazo de catorce (14) días naturales para desistir de la contratación de contenidos o servicios de pago, sin necesidad de justificación. No obstante, conforme a la normativa de consumidores y usuarios, el derecho de desistimiento no será aplicable al suministro de contenido digital cuando la ejecución haya comenzado con el consentimiento previo y expreso del Usuario y con su conocimiento de que pierde dicho derecho. Para ejercer el desistimiento, cuando proceda, el Usuario puede escribir a <a href="mailto:hola@safy.app">hola@safy.app</a>.</p>
+    <h3 class="sub">6.5. Modificación de precios</h3>
+    <p>El Titular podrá modificar los precios de los contenidos y servicios de pago. Las modificaciones no afectarán a las suscripciones ya contratadas hasta su renovación, momento en el que el Usuario será informado del nuevo precio con carácter previo.</p>
+  </section>
+
+  <section id="s7">
+    <div class="sec-label"><span class="num">07</span><span class="sep">—</span>Datos personales</div>
+    <h2 class="sec">Qué hacemos con tus datos.</h2>
+    <p>El tratamiento de los datos personales de los Usuarios se rige por el Reglamento (UE) 2016/679 General de Protección de Datos (RGPD) y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD).</p>
+    <p>La información detallada sobre el tratamiento de datos personales —finalidades, base legitimadora, destinatarios, plazos de conservación y forma de ejercer los derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad— se recoge en la <strong>Política de Privacidad</strong> de la App, documento independiente y complementario a estos Términos.</p>
+    <p>El Usuario declara haber sido informado de la existencia de dicha Política de Privacidad y se compromete a su lectura. El uso de la App implica el conocimiento de la misma.</p>
+  </section>
+
+  <section id="s8">
+    <div class="sec-label"><span class="num">08</span><span class="sep">—</span>Garantías y responsabilidad</div>
+    <h2 class="sec">Lo que sí garantizamos y lo que no.</h2>
+    <h3 class="sub">8.1. Disponibilidad</h3>
+    <p>El Titular no garantiza la disponibilidad, acceso y continuidad ininterrumpida del funcionamiento de la App. Procurará adoptar las medidas razonables para mantener el servicio operativo, pero no será responsable de las interrupciones, retrasos, errores o fallos derivados de causas que escapen a su control razonable, incluyendo labores de mantenimiento, fallos en la red de telecomunicaciones o causas de fuerza mayor.</p>
+    <h3 class="sub">8.2. Contenido y uso</h3>
+    <p>El Titular no será responsable de los daños y perjuicios derivados del uso indebido de la App por parte del Usuario, del incumplimiento de estos Términos, ni de la falta de veracidad, exactitud o actualidad de la información facilitada por el Usuario.</p>
+    <p>La App se proporciona «tal cual» y «según disponibilidad», sin garantías de que se ajuste a las necesidades o expectativas concretas del Usuario.</p>
+    <h3 class="sub">8.3. Enlaces y servicios de terceros</h3>
+    <p>La App puede contener enlaces a sitios o servicios de terceros. El Titular no asume responsabilidad alguna sobre los contenidos, políticas, productos o servicios de dichos terceros, cuyo acceso y uso se realiza bajo la exclusiva responsabilidad del Usuario.</p>
+    <h3 class="sub">8.4. Limitación de responsabilidad</h3>
+    <p>En la máxima medida permitida por la ley, la responsabilidad del Titular frente al Usuario por cualquier concepto quedará limitada a los daños directos efectivamente acreditados, excluyéndose expresamente la responsabilidad por daños indirectos, lucro cesante o pérdida de datos. Nada de lo dispuesto en estos Términos excluye o limita la responsabilidad del Titular en aquellos supuestos en que dicha exclusión o limitación no esté permitida por la ley, en particular frente a Usuarios consumidores.</p>
+  </section>
+
+  <section id="s9">
+    <div class="sec-label"><span class="num">09</span><span class="sep">—</span>Suspensión y baja</div>
+    <h2 class="sec">Cómo terminar el uso de la App.</h2>
+    <p>El Usuario puede dejar de utilizar la App en cualquier momento, así como solicitar la baja de su cuenta cuando lo desee, a través de las funcionalidades habilitadas al efecto o escribiendo a <a href="mailto:hola@safy.app">hola@safy.app</a>.</p>
+    <p>El Titular podrá suspender o terminar el acceso del Usuario a la App, de forma temporal o definitiva, en caso de incumplimiento de estos Términos o de la normativa aplicable, o cuando existan razones técnicas, de seguridad o de cese del servicio que lo justifiquen. Siempre que sea posible, el Titular informará al Usuario de dicha circunstancia.</p>
+  </section>
+
+  <section id="s10">
+    <div class="sec-label"><span class="num">10</span><span class="sep">—</span>Cambios en los Términos</div>
+    <h2 class="sec">Si algo cambia, te lo decimos.</h2>
+    <p>El Titular se reserva el derecho a modificar, en cualquier momento, la presentación, configuración y contenido de la App, así como los presentes Términos.</p>
+    <p>Las modificaciones de los Términos entrarán en vigor desde su publicación en la App. Se recomienda al Usuario revisar periódicamente los Términos vigentes. El uso continuado de la App tras la publicación de las modificaciones implica su aceptación. Si no estás de acuerdo con los nuevos Términos, debes cesar en el uso de la App.</p>
+  </section>
+
+  <section id="s11">
+    <div class="sec-label"><span class="num">11</span><span class="sep">—</span>Nulidad parcial</div>
+    <h2 class="sec">Si una cláusula falla, el resto sigue.</h2>
+    <p>Si cualquier cláusula incluida en estos Términos fuese declarada, total o parcialmente, nula o ineficaz, dicha nulidad afectará únicamente a esa disposición o a la parte de la misma que resulte nula. El resto de los Términos seguirá siendo válido. La cláusula afectada se tendrá por no puesta o se sustituirá, en la medida de lo posible, por otra que persiga la misma finalidad.</p>
+  </section>
+
+  <section id="s12">
+    <div class="sec-label"><span class="num">12</span><span class="sep">—</span>Ley aplicable y litigios</div>
+    <h2 class="sec">Qué ley aplica si hay un problema.</h2>
+    <p>Los presentes Términos se rigen e interpretan de conformidad con la legislación española.</p>
+    <p>Para la resolución de cualquier controversia derivada del acceso o uso de la App, las partes se someterán a los Juzgados y Tribunales que resulten competentes conforme a la normativa aplicable. Cuando el Usuario tenga la condición de consumidor, será de aplicación el fuero que con carácter imperativo establezca la normativa de protección de los consumidores y usuarios.</p>
+    <p>Se informa al Usuario consumidor de la existencia de la plataforma de resolución de litigios en línea de la Comisión Europea, accesible en <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a>, a la que puede acudir para resolver de forma extrajudicial las controversias derivadas de contrataciones realizadas a través de la App.</p>
+  </section>
+
+  <section id="s13">
+    <div class="sec-label"><span class="num">13</span><span class="sep">—</span>Contacto</div>
+    <h2 class="sec">¿Dudas? Escríbenos.</h2>
+    <p>Para cualquier consulta, comunicación o reclamación relacionada con la App o con estos Términos:</p>
+    <div class="identity">
+      <dl>
+        <dt>Email</dt><dd><a href="mailto:hola@safy.app">hola@safy.app</a></dd>
+        <dt>Web</dt><dd><a href="https://safy.app">safy.app</a></dd>
+        <dt>Dirección</dt><dd>Safy App, SL · Calle Costa Brava 14, 28034 Madrid (España)</dd>
+      </dl>
+    </div>
+  </section>
+
+  <div class="closing">
+    <div class="mark">Plano<span class="dot">.</span></div>
+    <p>El Usuario declara haber leído, entendido y aceptado los presentes Términos y Condiciones de Uso en su totalidad.</p>
+  </div>
+
+  <footer>
+    <span>© 2026 Safy App, SL</span>
+    <span>Manual de Identidad v1.0</span>
+  </footer>
+
+</div>
+
+<a href="#" class="totop" aria-label="Volver arriba">↑</a>
+
+<script>
+  var totop = document.querySelector('.totop');
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 600) totop.classList.add('show');
+    else totop.classList.remove('show');
+  });
+  totop.addEventListener('click', function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>
