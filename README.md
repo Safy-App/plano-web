@@ -3,7 +3,7 @@
 Landing comercial de **Plano**, una app de gestión de finanzas
 personales por **Safy App S.L.**
 
-🌐 **Web**: https://plano-web.netlify.app
+🌐 **Web**: https://inplano.com
 📱 **App**: https://safy-crm.netlify.app/personal.html
 
 ## Stack
